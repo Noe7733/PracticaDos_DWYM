@@ -1,0 +1,48 @@
+body{
+    background-color: #d6cab0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    color: 282726;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+fieldset{
+    border-radius: 10px;
+}
+
+.titulo{
+    width: 100%;   
+    background-color: #F5F5F5;
+    padding: 15px;
+    border: 1px solid #C0C0C0;
+}
+
+.container{
+    align-items: center;
+    display: flex;
+    column-gap: 30px;
+}
+
+input{
+    background-color: #d6cab0;
+    border: 1px solid #999;
+    margin: 4px 0;
+    padding: 6px;
+    width: 85%;
+}
+
+.styled-button{
+    background-color: #86817c;
+    color: #fff;
+    transition: background-color 0.3s, color 0.5s;
+    width: 40%; /*este se utiliza para el largo del boton*/
+    margin: 10px;
+    padding: 9px;/*este se utiliza para el ancho del boton*/
+    border: 1px solid #999;
+}
+
+.styled-button:hover{
+    background-color: #54504c;
+}

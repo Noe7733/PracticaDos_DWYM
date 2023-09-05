@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2</title>
+    <link rel="stylesheet" , href="CSS/estilos.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/acciones.js"></script>
+
+</head>
+<body>
+    <center>
+        <div class="container">
+            <!--DIV HECHO PARA LA GENERACIÓN DEL RFC-->
+            <div class="seccion1">
+                <h4>PRACTICA 2 - GENERADOR DE CODIGO RFC Y CONSUMO DE UNA API REST.</h4>
+                <b><h5>GENERACIÓN DEL RFC</h5></b>
+                <fieldset>
+                    <label1>Escribe de favor su nombre: </label1><br>
+                    <input type="text" class="entrada1" id="nombre" placeholder="Nombre" style="text-transform: uppercase;"><br>
+                    <label2>Escribe de favor su apellido paterno: </label2><br>
+                    <input type="text" class="entrada2" id="apPat" placeholder="Apellido Paterno" style="text-transform: uppercase;"><br>
+                    <label3>Escribe de favor su apellido materno: </label2><br>
+                    <input type="text" class="entrada3" id="apMat" placeholder="Apellido Materno" style="text-transform: uppercase;"><br>
+                    <label4>Asigne de favor su fecha de nacimiento: </label2><br>
+                    <input type="date" class="entrada4" id="fecha"><br>
+                    <button id="generar" class="styled-button">GENERAR</button>
+                    <button id="limpiar"  class="styled-button">LIMPIAR</button><br>
+                    <label5>RFC: </label5><br>
+                    <input type="text" class="resultado" id="resultadoFinal" style="text-transform: uppercase;" readonly><br>
+                </fieldset>
+            </div>
+    
+            <!--DIV PARA LA REALIZACIÓN DEL CONSUMO DE UNA AI-->
+            <div class="seccion2">
+                <b><h5>CONSUMO DE UNA API</h5></b><br>
+                <fieldset>
+                <label1>Escribe de favor el ID del usuario: </label1><br>
+                <input type="number" class="entrada1" id="idusu" placeholder="ID"><br>
+                <button id="selectUsu" class="styled-button">BUSCAR</button>
+                <button id="clean"  class="styled-button"> LIMPIAR </button><br>
+                <label3>Nombre y apellido paterno del usuario seleccionado: </label3><br>
+                <div3>
+                    <p id="nUsu"></p>
+                </div3><br>
+                <label4>Email del usuario seleccionado: </label4><br>
+                <div4>
+                    <p id="emailUsu"></p><br>
+                </div4>
+                </fieldset>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
